@@ -1,0 +1,11 @@
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\model\MemoryBlock.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\service\MemoryService.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\service\SwappingService.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\model\SwapProcess.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\controller\SwappingController.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\model\PageFrame.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\service\GarbageCollectorService.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\model\Process.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\service\VirtualMemoryService.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\controller\MemoryController.java
+F:\Study\memory-management-techniques\src\main\java\com\example\memorymanagement\MemoryManagementTechniquesApplication.java

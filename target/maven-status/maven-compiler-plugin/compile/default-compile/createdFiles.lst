@@ -1,0 +1,11 @@
+com\example\memorymanagement\controller\MemoryController.class
+com\example\memorymanagement\service\VirtualMemoryService.class
+com\example\memorymanagement\controller\MemoryController$MemoryApiController.class
+com\example\memorymanagement\model\Process.class
+com\example\memorymanagement\MemoryManagementTechniquesApplication.class
+com\example\memorymanagement\model\MemoryBlock.class
+com\example\memorymanagement\model\PageFrame.class
+com\example\memorymanagement\model\SwapProcess.class
+com\example\memorymanagement\service\SwappingService.class
+com\example\memorymanagement\service\MemoryService.class
+com\example\memorymanagement\controller\SwappingController.class

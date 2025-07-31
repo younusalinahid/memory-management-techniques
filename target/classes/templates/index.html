@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Management Techniques</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1>🧠 Memory Management Techniques</h1>
+
+    <div class="dashboard">
+        <!-- Memory Allocation Section -->
+        <div class="section">
+            <h2>Memory Allocation Algorithms</h2>
+
+            <div class="input-group">
+                <label>Size:</label>
+                <input type="number" id="memorySize" value="5" min="1" max="20">
+                <label>Algorithm:</label>
+                <select id="allocationAlgorithm">
+                    <option value="first">First Fit</option>
+                    <option value="best">Best Fit</option>
+                    <option value="worst">Worst Fit</option>
+                </select>
+            </div>
+
+            <div class="controls">
+                <button type="button" class="btn btn-primary" onclick="allocateMemory()">Allocate Memory</button>
+                <button type="button" class="btn btn-danger" onclick="deallocateMemory()">Deallocate Random</button>
+                <button type="button" class="btn btn-warning" onclick="resetMemory()">Reset Memory</button>
+            </div>
+
+            <div class="memory-visualization" id="memoryVisualization"></div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="section">
+            <h2>Memory Statistics</h2>
+            <div class="stats-grid" id="statsGrid"></div>
+            <button type="button" class="btn btn-success" onclick="runGarbageCollection()">🗑️ Run Garbage Collection</button>
+        </div>
+
+        <!-- Process Management Section -->
+        <div class="section">
+            <h2>Process Management</h2>
+
+            <div class="input-group">
+                <label>Name:</label>
+                <input type="text" id="processName" placeholder="Process name">
+                <label>Size:</label>
+                <input type="number" id="processSize" value="3" min="1" max="10">
+            </div>
+
+            <div class="controls">
+                <button type="button" class="btn btn-primary" onclick="createProcess()">Create Process</button>
+            </div>
+
+            <div class="process-list" id="processList"></div>
+        </div>
+
+        <!-- Page Replacement Section -->
+        <div class="section">
+            <h2>Page Replacement Algorithms</h2>
+
+            <div class="input-group">
+                <label>Algorithm:</label>
+                <select id="pageAlgorithm">
+                    <option value="fifo">FIFO</option>
+                    <option value="lru">LRU</option>
+                    <option value="optimal">Optimal</option>
+                </select>
+            </div>
+
+            <div class="controls">
+                <button type="button" class="btn btn-primary" onclick="simulatePageReplacement()">Simulate</button>
+            </div>
+
+            <div class="page-frames" id="pageFrames"></div>
+            <div class="algorithm-results" id="algorithmResults"></div>
+        </div>
+    </div>
+
+    <!-- Swap Memory Section -->
+    <div class="section swap-section full-width">
+        <h2>💾 Swap Memory Management</h2>
+
+        <div class="swap-controls">
+            <input type="text" id="swapProcessId" placeholder="Enter Process ID (e.g., Process-1)">
+            <button type="button" class="btn btn-danger" onclick="swapOutProcess()">⬇️ Swap Out</button>
+            <button type="button" class="btn btn-success" onclick="swapInProcess()">⬆️ Swap In</button>
+        </div>
+
+        <div class="swap-lists">
+            <div class="swap-list">
+                <h3>🟢 Processes in RAM</h3>
+                <ul id="ramProcesses">
+                    <li>Loading from backend...</li>
+                </ul>
+            </div>
+            <div class="swap-list">
+                <h3>🟡 Processes in Swap Space</h3>
+                <ul id="swapProcesses">
+                    <li>Loading from backend...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activity Log -->
+    <div class="section full-width">
+        <h2>Activity Log</h2>
+        <div class="log-area" id="activityLog">
+            <div>[System] Memory Management System initialized...</div>
+            <div>[Backend] Connecting to Spring Boot backend...</div>
+        </div>
+    </div>
+</div>
+<script th:src="@{/js/memory-demo.js}"></script>
+</body>
+</html>
